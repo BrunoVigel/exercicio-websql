@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ficha Cadastral</title>
+</head>
+<body>
+    <h1>Ficha Cadastral</h1>
+    <form onsubmit="return saveData()">
+        <h2>Dados pessoais</h2>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="input-wrapper">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+        </div>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <label for="rg">RG</label>
+                <input type="text" name="rg" id="rg" maxlength="10" placeholder="Digite seu RG">
+            </div>
+            <div class="input-wrapper">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="CPF" placeholder="Digite seu CPF" maxlength="14">
+            </div>
+        </div>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="">Escolha seu sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+        </div>
+
+        <h2>Endereço</h2>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <label for="CEP">CEP</label>
+                <input type="text" name="CEP" id="CEP" maxlength="9" placeholder="Digite seu CEP">
+            </div>
+            <div class="input-wrapper">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" maxlength="55" placeholder="Digite sua cidade">
+            </div>
+        </div>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" maxlength="55" placeholder="Digite sua Rua">
+            </div>
+        </div>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" maxlength="8" placeholder="Digite seu bairro">
+            </div>
+            <div class="input-wrapper">
+                <label for="numero">Número</label>
+                <input type="text" name="numero" id="numero" maxlength="55" placeholder="Digite seu número">
+            </div>
+        </div>
+        <div class="input-buttons">
+            <input type="button" value="Limpar Dados">
+            <input type="submit" id="teste" value="Enviar">
+        </div>
+    </form>
+
+    <table id="user-table">
+		<tr>
+			<th>Nome</th>
+            <th>Sobrenome</th>
+            <th>RG</th>
+            <th>CPF</th>
+            <th>sexo</th>
+            <th>Data de Nascimento</th>
+            <th>CEP</th>
+            <th>Bairro</th>
+            <th>Rua</th>
+            <th>Numero</th>
+            <th>Cidade</th>
+		</tr>
+	</table>
+    <script src="script.js"></script>
+</body>
+</html>

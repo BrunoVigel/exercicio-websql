@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 45rem;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input {
+    min-width: 18rem;
+}
+
+input[type=text],input[type=date], select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    outline: none;
+    width: 100%;
+}
+
+input#rua {
+    min-width:42.8rem;
+}
+
+.gender-group {
+    display: flex;
+    gap: 3rem;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 1.5rem 0;
+}
+
+.input-buttons input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #6D36FB;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1rem;
+}
+
+.input-buttons input:hover {
+    background-color: #5027ba;
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 100%; */
+    margin:0 auto 16px ;
+    opacity: 0;
+}
+
+table.open {
+    opacity: 1;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
